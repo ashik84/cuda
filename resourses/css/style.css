@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+}
+/*=================
+   Reusable Components 
+===================*/
+
+.full-page {
+  padding: 0 18rem;
+}
+.btn {
+  background: #eb7d4b;
+  font-size: 1.5rem;
+  padding: 1.5rem 6rem;
+  color: #fff;
+  border-bottom: 0.3rem solid #c86a40;
+  border-radius: 0.5rem;
+}
+h2 {
+  font-size: 4rem;
+  color: #fff;
+}
+h3 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+h4 {
+  font-size: 1.8rem;
+}
+h5 {
+  font-size: 1.8rem;
+}
+.underline::after {
+  content: "";
+  display: block;
+  width: 8rem;
+  height: 0.4rem;
+  background-color: #3c4761;
+  margin: 2rem auto 0 auto;
+}
+/*=================
+   Header Section 
+===================*/
+
+header {
+  background: linear-gradient(rgba(135, 80, 156, 0.9), rgba(135, 80, 156, 0.9)),
+    url(img/hero-bg.jpg) no-repeat center center / cover fixed;
+  height: 85vh;
+  position: relative;
+}
+nav .logo {
+  float: left;
+  padding-top: 3rem;
+}
+nav .menu {
+  float: right;
+  padding-top: 3rem;
+}
+nav .menu li {
+  list-style-type: none;
+  display: inline-block;
+}
+nav .menu li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 0.7rem 1.6rem;
+  margin-left: 0.6rem;
+  transition: 0.3s;
+  border-radius: 0.4rem;
+}
+nav .menu li a:hover {
+  background-color: #643a79;
+}
+nav .menu li .active {
+  background-color: #643a79;
+}
+.head-text {
+  width: 88rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.head-text a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 8rem;
+}
+
+/*=================
+   Services Section 
+===================*/
+
+.services {
+  height: 100vh;
+  background: linear-gradient(rgba(23, 194, 164, 0.9), rgba(23, 194, 164, 0.9)),
+    url(img/services-bg.jpg) no-repeat center top / cover;
+}
+.service-discription {
+  width: 65rem;
+  padding-top: 6rem;
+  padding-bottom: 7rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.service-discription h2 {
+  margin-bottom: 3.5rem;
+}
+.service-discription p,
+.details p {
+  font-size: 1.8rem;
+  color: #fff;
+}
+.details h3 {
+  margin: 5rem 0 2rem 0;
+}
+.details {
+  text-align: center;
+}
+
+/*=================
+   Team Section 
+===================*/
+
+.team {
+  background: linear-gradient(
+      rgba(231, 241, 248, 0.9),
+      rgba(231, 241, 248, 0.9)
+    ),
+    url(img/team-bg.jpg) no-repeat center top / cover;
+  height: 100vh;
+}
+.team h2,
+.team p,
+.team h4,
+.team h5 {
+  color: #3c4761;
+}
+.team h2 {
+  padding-top: 6rem;
+  text-align: center;
+  font-size: 4rem;
+}
+.team p {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.team-member img {
+  width: 20rem;
+  border-radius: 50%;
+}
+.team-member {
+  text-align: center;
+  margin-top: 4rem;
+  margin-left: 0;
+  padding-left: 1rem;
+  overflow: hidden;
+}
+
+.team-member h4 {
+  margin: 1.5rem 0 1.4rem 0;
+}
+.team-member p {
+  font-size: 1.6rem;
+}
+
+.team-member a {
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  margin: 1rem 0.4rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 2rem;
+  position: relative;
+  transition: 0.3s;
+}
+.team-member i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.team-member a:hover {
+  transform: rotate(360deg);
+}
+
+/*=================
+   Skill Section 
+===================*/
+.skill {
+  background: linear-gradient(
+      rgba(251, 251, 251, 0.9),
+      rgba(251, 251, 251, 0.9)
+    ),
+    url(img/skill-bg.jpg) no-repeat center top / cover;
+  height: 83vh;
+  text-align: center;
+}
+.skill h2 {
+  color: #000;
+  padding-top: 8rem;
+  text-align: center;
+  font-size: 4rem;
+}
+.skill p {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* progress bar */
+.web svg.radial-progress circle {
+  stroke: #30bae7;
+}
+.html-css svg.radial-progress circle {
+  stroke: #d74680;
+}
+.graphic svg.radial-progress circle {
+  stroke: #15c7a8;
+}
+
+.ui svg.radial-progress circle {
+  stroke: #eb7d4b;
+}
+
+.team-bar {
+  margin-left: 0;
+  padding-left: 1rem;
+  margin-top: 7rem;
+}
+
+/*=================
+   Portfolio Section
+===================*/
+
+.portfolio {
+  background: linear-gradient(
+      rgba(255, 221, 153, 0.9),
+      rgba(255, 221, 153, 0.9)
+    ),
+    url(img/portfolio-bg.jpg) no-repeat center top / cover;
+  text-align: center;
+  color: #000;
+  height: 145vh;
+  padding-top: 4rem;
+}
+.portfolio h2 {
+  color: #000;
+}
+
+.portfolio p {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.portfolio button {
+  background: #ebc985;
+  color: #000;
+  font-size: 1.8rem;
+  margin: 0.5rem;
+  margin-bottom: 3rem;
+
+  padding: 0.5rem 1.3rem;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.4s;
+}
+.portfolio button:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0.2rem 0.3rem #584e4e;
+}
+.portfolio h4 {
+  font-size: 2rem;
+  color: #433939;
+  margin-top: 1.5rem;
+}
+
+.row1, .row2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  margin: 2rem 3rem;
+  text-align: center;
+}
+.portfolio img {
+  width:45rem;
+}
+.portfolio .mixitup-control-active {
+  background-color: #43a6bf;
+}
+
+
+/*=================
+   Testimonial Section
+===================*/
+
+.testimonial {
+  background: linear-gradient(
+      rgba(215,70,128, 0.9),
+      rgba(215,70,128, 0.9)
+    ),
+    url(img/testimonial-bg.jpg) no-repeat center top / cover;
+  text-align: center;
+  color: #000;
+  height: 100vh;
+  padding-top: 6rem;
+}
+.testimonial h2 {
+  color: #ffffff;
+}
+
+.testimonial p{
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  text-align: left;
+  color: #fff;
+  font-style: italic;
+}
+
+.testimonial img {
+  width:10rem;
+  border-radius: 50%;
+  float: left;
+  margin: 2rem 3rem;
+}
+.testimonial h5 {
+  color: #fd9;
+    text-align: left;
+  margin-top: .6rem;
+}
+.testimonial h4 {
+  text-align: left;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.testimonial .our {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.testimonial .row1 {
+  margin-bottom: 7rem;
+}
