@@ -297,7 +297,8 @@ h1 {
   margin-top: 1.5rem;
 }
 
-.row1, .row2 {
+.row1,
+.row2 {
   display: flex;
   flex-direction: row;
 }
@@ -307,22 +308,18 @@ h1 {
   text-align: center;
 }
 .portfolio img {
-  width:45rem;
+  width: 45rem;
 }
 .portfolio .mixitup-control-active {
   background-color: #43a6bf;
 }
-
 
 /*=================
    Testimonial Section
 ===================*/
 
 .testimonial {
-  background: linear-gradient(
-      rgba(215,70,128, 0.9),
-      rgba(215,70,128, 0.9)
-    ),
+  background: linear-gradient(rgba(215, 70, 128, 0.9), rgba(215, 70, 128, 0.9)),
     url(img/testimonial-bg.jpg) no-repeat center top / cover;
   text-align: center;
   color: #000;
@@ -333,7 +330,7 @@ h1 {
   color: #ffffff;
 }
 
-.testimonial p{
+.testimonial p {
   margin-top: 2rem;
   font-size: 1.8rem;
   text-align: left;
@@ -342,15 +339,15 @@ h1 {
 }
 
 .testimonial img {
-  width:10rem;
+  width: 10rem;
   border-radius: 50%;
   float: left;
   margin: 2rem 3rem;
 }
 .testimonial h5 {
   color: #fd9;
-    text-align: left;
-  margin-top: .6rem;
+  text-align: left;
+  margin-top: 0.6rem;
 }
 .testimonial h4 {
   text-align: left;
@@ -364,4 +361,79 @@ h1 {
 }
 .testimonial .row1 {
   margin-bottom: 7rem;
+}
+
+/*=================
+   Contact Section
+===================*/
+
+.contact {
+  background: linear-gradient(rgba(60, 84, 153, 0.9), rgba(60, 84, 153, 0.9)),
+    url(img/contact-bg.jpg) no-repeat center top / cover;
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+}
+
+.contact h2 {
+  padding-top: 6rem;
+}
+.contact p {
+  margin: 3rem 0;
+  font-size: 1.8rem;
+}
+.contact form {
+  width: 75%;
+  margin: 0 auto;
+}
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  float: left;
+  width: 49%;
+  padding: 2rem;
+  border: none;
+  color: #fff;
+  background-color: #273a71;
+  border-radius: .5rem;
+}
+.contact input[type="text"] {
+  margin-right: 2%;
+}
+.contact input::placeholder {
+  color: #fff;
+  font-size: 1.8rem;
+}
+.contact textarea {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+.contact button {
+  background-color: #30bae7;
+  border: none;
+  border-bottom: 0.5rem solid #299EC5;
+  font-size: 2rem;
+  padding: 1.5rem 3rem;
+}
+
+/*=================
+   Contact Section
+===================*/
+
+.footer{
+  background-color: #344B8E;
+  height: 15vh;
+  border-top: .1rem solid #fff0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.3rem;
+  padding: 2rem;
 }
