@@ -58,13 +58,18 @@ header {
   height: 85vh;
   position: relative;
 }
+nav.uk-active{
+ background-color: rgba(135, 80, 156, 0.9);
+ padding: 0;
+ width: 100%;
+}
 nav .logo {
   float: left;
-  padding-top: 3rem;
+  padding: 2rem 0 0 18rem;
 }
 nav .menu {
   float: right;
-  padding-top: 3rem;
+  padding: 3rem 0 0 18rem;
 }
 nav .menu li {
   list-style-type: none;
